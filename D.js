@@ -5010,7 +5010,7 @@ if (!isUser) return sendButMessage(from, a, b, ton,{quoted : freply})
   break
 //====================================================================
 case 'mediafire':
-  //////
+if (!isPremium) return sendButMessage(from, prem1, prem2, prem3, {quoted : freply})
 if (!isUser) return sendButMessage(from, a, b, ton,{quoted : freply}) 
  
    if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply(mess.limit)
